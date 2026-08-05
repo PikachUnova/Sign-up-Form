@@ -1,0 +1,55 @@
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+.left-panel{
+    flex:1;
+    background-size:cover;
+    background-position:center;
+}
+
+.photo-credit{
+    position: relative;
+    display: inline-block;
+}
+
+.logo-banner{
+    background:rgba(0,0,0,.2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+fieldset{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+input{
+    border:1px solid #E5E7EB;
+}
+
+input:focus{
+    border:2px solid blue;
+    box-shadow:0 0 5px rgba(0,0,0,.2);
+    outline:none;
+}
+
+input:user-invalid{
+    border:2px solid red;
+}
+
+button{
+    background:#596D48;
+    color:white;
+    border:none;
+    border-radius:8px;
+    padding:12px 32px;
+
+}
+
+.right-panel{
+    flex:2;
+}
