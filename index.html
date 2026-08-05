@@ -10,46 +10,71 @@
     <main class="container">
 
         <aside class="left-panel">
-            <div class="photo-credit"> 
-                <img src="MyChar.png" alt="Logo">
-                 <p>Photo by Chloe Hradek</p>
-            </div>
+            
             <div class="logo-banner">
                     <img src="odin-lined.png" alt="Logo">
                     <h1>ODIN</h1>
             </div>
+            
+            <p>Photo by Chloe Hradek</p>
+            
         </aside>
         
 
         <section class="right-panel">
+
             <header class="intro">
                 <p> This is not a real online service... </p>
                 <p> You know you want to.</p>
             </header>
 
             <form>
-                <fieldset>
-                    <legend>Let's do this!</legend>
-                    <!-- inputs -->
-                </fieldset>
 
-                <div class="form-row">
-                    <div class="input-group"> 
+                <fieldset>
+
+                    <legend>Let's do this!</legend>
+                    
+                    <div class="input-group">
+                        <label for="firstName"> FIRST NAME </label>
+                        <input type="text" id="firstName" name="firstName" required>
                     </div>
 
                     <div class="input-group">
-                        <label for="first-name"> FIRST NAME </label>
-                        <input type="text" id="first-name" name="first-name" required>
+                        <label for="lastName"> LAST NAME </label>
+                        <input type="text" id="lastName" name="lastName" required>
                     </div>
-                </div>
+                    
+                    <div class="input-group">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" required minlength="8">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="confirmPassword">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirmPassword" required minlength="8">
+                    </div>
+
+                </fieldset>
 
                 <button>Create Account</button>
+
             </form>
 
             <p>Already have an account? <a href="#">Log in</a> </p>
+        
         </section>
 
     </main>
-</body>
 
+</body>
 </html>
